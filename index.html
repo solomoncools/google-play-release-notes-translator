@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div id="main">
+        <div id="titlebar">
+            <h2>Google Play Release Notes Translation Service</h2>
+        </div>
+        <div id="input-container">
+            <textarea id="sourceText"></textarea>
+            <div id="console-container">
+                <h3 class="emoji">🛸</h3>
+                <h3 class="emoji">🌏</h3>
+                <br />
+                <h3>Input Language</h3>
+                <select name="inputLanguages" id="inputLanguages"></select>
+                <h3>Output Language</h3>
+                <select name="outputLanguages" id="outputLanguages"></select>
+                <br />
+                <input id="button" type="button" value="🎉 Translate Into One" />
+                <input id="button-all-translate" type="button" value="💯 Translate Into All" />
+            </div>
+            <textarea id="resultText"></textarea>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<script src="translate.js"></script>
+</html>
