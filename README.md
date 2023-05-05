@@ -1,5 +1,6 @@
 <h1>🛸 Google Play Release Notes Translator</h1>
-<h2>One click translation for your google play release notes. Written in javascript. Adds appropriate XML tags</h2>
+<h2>One click translation for your google play release notes.</h2>
+<h3>Written in javascript. Adds appropriate XML tags to each unit of translation.</h3>
 
 <h2>Getting Started</h2>
 <ul>
