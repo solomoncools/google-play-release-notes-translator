@@ -12,6 +12,24 @@
   <li>Select your input language (default is English)</li>
 </ul>
 
+<h2>Input Syntax</h2>
+<ul>
+  <li>A '+' symbol will be added to the start of lines that do not start with a '*' (asterisk)</li>
+  <li>Lines which define sub-features should start with a '*' (asterisk)</li>
+</ul>
+<h3><i>Example Input</i></h3>
+<p>Main Feature 1</p>
+<p>* SubFeature A</p>
+<p>* SubFeature B</p>
+<p>Main Feature 2</p>
+<p>* SubFeature A</p>
+<h3><i>Example Output</i></h3>
+<p>+ Main Feature 1</p>
+<p>* SubFeature A</p>
+<p>* SubFeature B</p>
+<p>+ Main Feature 2</p>
+<p>* SubFeature A</p>
+
 <h2>For one-click language translation into all available languages</h2>
 <ul>
   <li>Click "Translate Into All"</li>
