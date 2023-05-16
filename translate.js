@@ -107,7 +107,11 @@ function translate(){
         var xmlmarkup = getLanguageData(targetLang).xml;
         var line_output = "";
         for(var i = 0; i < data[0].length; i++) {
-            line_output += data[0][i][0];
+            var _data = data[0][i][0];
+            if(_data.charAt(0) != "*") {
+                _data = "+ " + _data;
+            }
+            line_output += _data;
         }
         var output = "<"+xmlmarkup+">\n" + line_output + "\n</"+xmlmarkup+">";
         $('textarea#resultText').val(output);
@@ -131,7 +135,12 @@ function allTranslate(){
             
             var line_output = "";
             for(var i = 0; i < data[0].length; i++) {
-                line_output += data[0][i][0];
+                var _data = data[0][i][0];
+                if(_data.charAt(0) != "*") {
+                    _data = "+ " + _data;
+                }
+                console.log(_data);
+                line_output += _data;
             }
 
             allOutput += "<"+xmlmarkup+">\n" + line_output + "\n</"+xmlmarkup+">" + "\n";
